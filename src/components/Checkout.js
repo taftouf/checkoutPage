@@ -21,7 +21,7 @@ const Checkout = ()=>{
                     </div>
     
                     <div className="p-8 bg-gray-100 dark:bg-gray-800 flex flex-col lg:w-full xl:w-3/5">
-                        <ModalConnect eth='0.01' usdt='1000' link='1000000000000000000' uni='1000000000000000'/>
+                        <ModalConnect eth='0.01' usdt='10000' link='1000000000000000000' uni='1000000000000000'/>
                         <div className="flex flex-row justify-center items-center mt-6">
                             <hr className="border w-full" />
                             <p className="flex flex-shrink-0 px-4 text-base leading-4 text-gray-600 dark:text-white">or pay with card</p>
