@@ -42,6 +42,11 @@ const ModalConnect =(props)=>{
             let tx = await contract.PayWithETH(process.env.REACT_APP_TO, overrides);
             setHash(tx.hash);
             let receipt = await tx.wait();
+            if(receipt.status === 1){
+                setPending(false);
+                setShowModalPay(false);
+                setShowModalSuccess(true);
+            }
             console.log(receipt);
         } catch (error) {
             console.log(error);
@@ -70,6 +75,7 @@ const ModalConnect =(props)=>{
             setHash(tx.hash);
             receipt = await tx.wait();
             if(receipt.status === 1){
+                setPending(false);
                 setShowModalPay(false);
                 setShowModalSuccess(true);
             }
