@@ -4,4 +4,4 @@ Pay with crypto
 
 # Demo
 
-soon
+. (Link)[https://resplendent-puppy-7df973.netlify.app/]
